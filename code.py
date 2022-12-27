@@ -3,12 +3,6 @@ from tkinter import *
 obj=Tk()
 
 ls=[]
-#ti avoid borders from canvas make highlightthickness=0 
-# In order to get which key is pressed we can event.widget.cget("text")
-
-    
-  
-
 def cross1():
     # c1()
     c=Canvas(highlightthickness=0,width=150,height=150,bg="black")#invert all colors after settings
@@ -178,8 +172,4 @@ def board():
     bz9.place(x=725,y=530)
 
     obj.mainloop()
-
- 
-
 board()
-
