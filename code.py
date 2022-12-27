@@ -24,14 +24,12 @@ def cross3():
     cl2=c.create_line(85,130,155,25,fill="white")
     c.place(x=605,y=75)
 
-
 def cross4():
     # c4()
     c=Canvas(highlightthickness=0,width=170,height= 170,bg="black")
     cl1=c.create_line(30,25,105,130,fill="white")
     cl2=c.create_line(30,130,105,25,fill="white")
     c.place(x=100,y=255)
-
 
 def cross7():
     # c7()
@@ -46,26 +44,27 @@ def cross5():
     cl1=c.create_line(85,25,155,130,fill="white")
     cl2=c.create_line(85,130,155,25,fill="white")
     c.place(x=325,y=255)
+    
 def cross8():
     # c8()
     c=Canvas(highlightthickness=0,width=205,height= 165,bg="black")
     cl1=c.create_line(85,25,155,130,fill="white")
     cl2=c.create_line(85,130,155,25,fill="white")
     c.place(x=325,y=435)
+    
 def cross6():
     # c6()
     c=Canvas(highlightthickness=0,width=165,height= 165,bg="black")
     cl1=c.create_line(85,25,155,130,fill="white")
     cl2=c.create_line(85,130,155,25,fill="white")
     c.place(x=605,y=255)
+    
 def cross9():
     # c9()
     c=Canvas(highlightthickness=0,width=165,height= 165,bg="black")
     cl1=c.create_line(85,25,155,130,fill="white")
     cl2=c.create_line(85,130,155,25,fill="white")
     c.place(x=605,y=435)
-# In order to create an outline in oval and other polygons use outline options
-
 
 def zero1():
     # z1()
@@ -114,13 +113,9 @@ def zero9():
     z.create_oval(10,25,105,115,fill="black",outline="white")
     z.place(x=650,y=435)
 
-
-
 def board():
-
     obj.maxsize(900,900)
     cv=Canvas(width=900,height=900,bg="black")
-
     
     # border lines
     cv.create_line(300,50,300,600,fill="white")
@@ -129,7 +124,6 @@ def board():
     cv.create_line(75,425,800,425,fill="white")
 
     cv.pack()
-
     # buttons
     bc1=Button(text="c1",command=cross1,fg="black",font="calibiri 11 bold")
     bc1.place(x=125,y=120)
@@ -149,7 +143,6 @@ def board():
     bc6.place(x=675,y=335)
     bc9=Button(text="c9",command=cross9,fg="black",font="calibiri 11 bold")
     bc9.place(x=675,y=530)
-
 
     bz1=Button(text="z1",command=zero1,fg="black",font="calibiri 11 bold")
     bz1.place(x=175,y=120)
